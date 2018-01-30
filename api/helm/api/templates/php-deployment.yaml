@@ -32,11 +32,6 @@ spec:
                 configMapKeyRef:
                   name: {{ template "fullname" . }}
                   key: debug
-            - name: CORS_ALLOW_ORIGIN
-              valueFrom:
-                configMapKeyRef:
-                  name: {{ template "fullname" . }}
-                  key: cors-allow-origin
             - name: APP_SECRET
               valueFrom:
                 secretKeyRef:
