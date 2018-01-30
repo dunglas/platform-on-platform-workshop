@@ -20,7 +20,7 @@ runtime:
 relationships:
     database: "mysqldb:mysql"
 
-# The configuration of app when it is exposed to the web.
+# The configuration of app when it is exposed to the web .
 web:
     locations:
         "/":
