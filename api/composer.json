@@ -8,6 +8,7 @@
         "api-platform/core": "^2.2@beta",
         "guzzlehttp/guzzle": "^6.3",
         "nelmio/cors-bundle": "^1.5",
+        "platformsh/symfonyflex-bridge": "^1.0",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
@@ -44,7 +45,7 @@
     },
     "extra": {
         "symfony": {
-            "id": "",
+            "id": "01C54BRS8937MGAQDTH7G7806Z",
             "allow-contrib": false
         }
     }
