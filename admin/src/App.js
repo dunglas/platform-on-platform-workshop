@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import HydraAdmin from 'api-platform-admin/lib/hydra/HydraAdmin';
 import platformVar from 'platformsh_variables';
 console.log(platformVar);
