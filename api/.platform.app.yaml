@@ -41,7 +41,6 @@ mounts:
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
-        rm web/app_dev.php
         bin/console --env=prod assets:install --no-debug
     deploy: |
         bin/console --env=prod cache:clear
