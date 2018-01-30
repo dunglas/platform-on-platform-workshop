@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HydraAdmin from 'api-platform-admin/lib/hydra/HydraAdmin';
+import { HydraAdmin } from '@api-platform/admin';
 import platformVar from 'platformsh_variables';
 console.log(platformVar);
 let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
@@ -17,3 +17,4 @@ class App extends Component {
 }
 
 export default App;
+
