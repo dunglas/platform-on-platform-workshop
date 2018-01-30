@@ -37,3 +37,10 @@ mounts:
     "/var/cache": "shared:files/cache"
     "/var/log": "shared:files/log"
     "/var/sessions": "shared:files/sessions"
+
+# The hooks that will be performed when the package is deployed.
+hooks:
+    build: |
+        bin/console --env=prod assets:install --no-debug
+    deploy: |
+        bin/console --env=prod cache:clear
