@@ -1,6 +1,0 @@
-{
-    "require": {
-        "symfony/dotenv": "^3.4",
-        "platformsh/symfonyflex-bridge": "^1.0"
-    }
-}
