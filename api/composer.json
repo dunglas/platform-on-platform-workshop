@@ -8,7 +8,7 @@
         "api-platform/core": "^2.2@beta",
         "guzzlehttp/guzzle": "^6.3",
         "nelmio/cors-bundle": "^1.5",
-        "platformsh/symfonyflex-bridge": "^1.0",
+        "platformsh/symfonyflex-bridge": "app-env",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
