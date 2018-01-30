@@ -1,4 +1,21 @@
-import React from 'react';
-import { HydraAdmin } from '@api-platform/admin';
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+import HydraAdmin from 'api-platform-admin/lib/hydra/HydraAdmin';
+import platformVar from 'platformsh_variables';
+console.log(platformVar);
+let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
 
-export default () => <HydraAdmin entrypoint={process.env.REACT_APP_API_ENTRYPOINT}/>;
+if(!entrypoint) {
+    entrypoint = 'https://api---master-7rqtwti-kpfnplkpyfk2k.eu.platform.sh/';
+}
+entrypoint = entrypoint.substring(0, entrypoint.length - 1);
+console.log(entrypoint);
+
+class App extends Component {
+    render() {
+        return <HydraAdmin entrypoint={entrypoint}/>
+    }
+}
+
+export default App;
