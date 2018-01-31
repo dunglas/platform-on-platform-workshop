@@ -16,7 +16,8 @@
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
-        "api-platform/schema-generator": "^2.1@beta"
+        "api-platform/schema-generator": "^2.1@beta",
+        "symfony/dotenv": "^4.0"
     },
     "config": {
         "preferred-install": {
