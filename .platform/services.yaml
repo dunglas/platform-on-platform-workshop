@@ -1,3 +1,7 @@
-postgresqldb:
-    type: postgresql:9.6
+mysqldb:
+    type: mysql:10.0
     disk: 1024
+
+#postgresqldb:
+#     type: postgresql:9.6
+#     disk: 1024

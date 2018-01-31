@@ -29,7 +29,6 @@ dependencies:
   nodejs:
     yarn: "*"
 
-
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
